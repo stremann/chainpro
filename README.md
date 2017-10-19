@@ -3,6 +3,8 @@ Chainpro
 Easy Blockchain implementation for JavaScript apps.
   
 [![Build Status](https://travis-ci.org/stremann/chainpro.svg?branch=master)](https://travis-ci.org/stremann/chainpro)
+[![NPM Version](https://img.shields.io/npm/v/chainpro.svg)](https://www.npmjs.com/package/chainpro)
+[![NPM Downloads](https://img.shields.io/npm/dm/chainpro.svg?style=flat-square)](https://www.npmjs.com/package/chainpro)
 
 ### Installation
 
