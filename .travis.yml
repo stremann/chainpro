@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '8'
+git:
+  depth: 5
+script:
+  - npm run lint
+  - npm run clean
+  - npm run build
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
