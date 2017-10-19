@@ -1,0 +1,14 @@
+# Intellij Idea project files
+.idea
+
+# Project oncfiguration files
+.env
+
+# Nodejs installed packages
+node_modules
+
+# Nodejs log file
+npm-debug.log
+
+# Build artifacts
+dist
