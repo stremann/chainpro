@@ -1,0 +1,78 @@
+{
+  "name": "chainpro",
+  "version": "0.1.0",
+  "description": "Chainpro",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "lint": "eslint ./src",
+    "start": "node dist/index.js",
+    "dev": "node dev.js",
+    "build": "babel -d ./dist ./src -s",
+    "lint-staged": "lint-staged",
+    "prepublish": "npm run clean && npm run lint && npm run build"
+  },
+  "pre-commit": "lint-staged",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stremann/chainpro.git"
+  },
+  "keywords": [
+    "chainpro",
+    "blockchain",
+    "database",
+    "maining",
+    "bitcoin"
+  ],
+  "author": "Roman Stremedlovskyi <stremann@yahoo.com> (https://github.com/stremann)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stremann/chainpro/issues"
+  },
+  "homepage": "https://github.com/stremann/chainpro#readme",
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "airbnb-base",
+      "prettier"
+    ],
+    "rules": {
+      "no-console": 0
+    },
+    "env": {
+      "node": true
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "lint-staged": {
+    "src/*.js": "eslint"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "body-parser": "^1.18.2",
+    "crypto-js": "^3.1.9-1",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "ws": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "^2.7.0",
+    "lint-staged": "^4.2.3",
+    "pre-commit": "^1.2.2"
+  }
+}
