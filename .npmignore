@@ -1,0 +1,5 @@
+# Intellij Idea project files
+.idea
+
+# Project oncfiguration files
+.env
