@@ -37,7 +37,7 @@ HTTP_PORT=3002 P2P_PORT=6002 P2P_PEERS=ws://localhost:6001 npm run dev
 
 ![Architecture](Chainpro.png)
 
-To get more details check the post on [Medium](https://) (WIP).
+To get more details check the post on [Medium](https://medium.com/@stremann/blockchain-in-100-lines-of-code-50186a9a230).
 
 ### Change Log
 
