@@ -1,6 +1,8 @@
 Chainpro
 ========
-Easy Blockchain implementation for JavaScript apps.  
+Easy Blockchain implementation for JavaScript apps.
+  
+[![Build Status](https://travis-ci.org/stremann/chainpro.svg?branch=master)](https://travis-ci.org/stremann/chainpro)
 
 ### Installation
 
@@ -19,7 +21,7 @@ Set up two connected nodes:
 
 ```
 HTTP_PORT=3001 P2P_PORT=6001 npm run dev
-HTTP_PORT=3002 P2P_PORT=6002 PEERS=ws://localhost:6001 npm run dev
+HTTP_PORT=3002 P2P_PORT=6002 P2P_PEERS=ws://localhost:6001 npm run dev
 ```
 
 #### HTTP API
@@ -33,7 +35,7 @@ HTTP_PORT=3002 P2P_PORT=6002 PEERS=ws://localhost:6001 npm run dev
 
 ![Architecture](Chainpro.png)
 
-To get more details check the post on [Medium](https://).
+To get more details check the post on [Medium](https://) (WIP).
 
 ### Change Log
 
