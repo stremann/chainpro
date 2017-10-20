@@ -31,7 +31,7 @@ HTTP_PORT=3002 P2P_PORT=6002 P2P_PEERS=ws://localhost:6001 npm run dev
 - `GET: /chain` -  return current chain of your application.
 - `POST: /mine --data {"data": "Some block data"}` -  create new block into the chain.
 - `GET: /peers` -  return current peer list of your application.
-- `POST: /mine --data {"peer" : "ws://localhost:6002"}` -  add peer to you application.
+- `POST: /connect --data {"peer" : "ws://localhost:6002"}` -  add peer to you application.
 
 ### Architecture
 
